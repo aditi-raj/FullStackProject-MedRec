@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>first project</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <section>
+            <header>
+                <h2 class="logo">MedRec</h2>
+                <div class="navigation">
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </header>
+            <div class="content">
+                <div class="info">
+                    <h2>Medicine Recommender</h2>
+                    <p>
+                        Select the health condition and get best Medicine name
+                        to cure it.<br />Live healthy Live long!
+                    </p>
+                    <form
+                        action="/"
+                        method="POST"
+                        enctype="multipart/form-data"
+                    >
+                        <input
+                            type="text"
+                            placeholder="Write Here"
+                            name="user_input"
+                            required
+                        />
+                        <!-- <input type="file" /> -->
+                        <input type="submit" value="Submit" />
+
+                        <p id="result">Recommended: {{output}}</p>
+                    </form>
+                </div>
+            </div>
+            <div class="media-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </section>
+    </body>
+</html>
